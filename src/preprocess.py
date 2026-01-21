@@ -1,5 +1,6 @@
 import pandas as pd
 from src.config import TARGET_COLUMN
+from sklearn.preprocessing import StandardScaler
 
 
 def load_data(file_path: str) -> pd.DataFrame:
@@ -30,4 +31,7 @@ def preprocess_data(df: pd.DataFrame):
     # One-hot encode categorical columns
     X = pd.get_dummies(X, drop_first=True)
 
-    return X, y
+    scaler = StandardScaler()
+    X_scaled = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)
+
+    return X_scaled, y
