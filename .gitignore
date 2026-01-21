@@ -12,6 +12,9 @@ env/
 # Model artifacts
 models/
 outputs/
+# ML artifacts
+models/*.pkl
+outputs/*.txt
 
 # OS files
 .DS_Store
@@ -25,3 +28,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+
+
+
+outputs/*.csv
+

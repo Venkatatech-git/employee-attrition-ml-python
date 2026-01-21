@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
 
-from src.config import DATA_FILE, MODEL_DIR, MODEL_FILE, RANDOM_STATE
+from src.config import DATA_FILE, MODEL_DIR, MODEL_FILE, OUTPUT_DIR, RANDOM_STATE
 from src.preprocess import load_data, preprocess_data
 
 
