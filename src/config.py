@@ -15,3 +15,4 @@ MODEL_FILE = MODEL_DIR / "model.pkl"
 # Training
 RANDOM_STATE = 42
 TEST_SIZE = 0.2
+OUTPUT_DIR = PROJECT_ROOT / "outputs"

@@ -13,6 +13,7 @@ from src.preprocess import load_data, preprocess_data
 
 
 def main():
+    OUTPUT_DIR.mkdir(exist_ok=True)
     # 1) Load dataset
     df = load_data(str(DATA_FILE))
 
