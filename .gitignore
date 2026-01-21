@@ -1,36 +1,45 @@
+# -----------------------
 # Python cache
+# -----------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
+# -----------------------
 # Virtual environments
+# -----------------------
 venv/
 env/
 .venv/
 
-# Model artifacts
-models/
-outputs/
-# ML artifacts
-models/*.pkl
-outputs/*.txt
+# -----------------------
+# ML artifacts (IGNORE GENERATED FILES)
+# Keep folder + README only
+# -----------------------
+models/*
+!models/README.md
 
+outputs/*
+!outputs/README.md
+
+# -----------------------
 # OS files
+# -----------------------
 .DS_Store
 Thumbs.db
 
+# -----------------------
 # VS Code
+# -----------------------
 .vscode/
 
+# -----------------------
 # Jupyter
+# -----------------------
 .ipynb_checkpoints/
 
+# -----------------------
 # Logs
+# -----------------------
 *.log
-
-
-
-
-outputs/*.csv
-
