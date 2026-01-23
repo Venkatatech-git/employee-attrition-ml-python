@@ -59,7 +59,7 @@ Feature metadata
 
 Evaluation metrics (metrics.txt)
 
-## ⚙️ Technologies Used
+⚙️ Technologies Used
 
 Python 3 (Anaconda)
 
