@@ -1,20 +1,15 @@
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
-# Project root (folder containing src/)
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+load_dotenv()
 
-# Data
-DATA_DIR = PROJECT_ROOT / "data"
-DATA_FILE = DATA_DIR / "raw.csv"
-TARGET_COLUMN = "Attrition"
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Models
-MODEL_DIR = PROJECT_ROOT / "models"
-MODEL_FILE = MODEL_DIR / "model.pkl"
+MODEL_PATH = Path(
+    os.getenv("MODEL_PATH", BASE_DIR / "models/model.pkl")
+)
 
-# Outputs
-OUTPUT_DIR = PROJECT_ROOT / "outputs"
-
-# Training
-RANDOM_STATE = 42
-TEST_SIZE = 0.2
+DATA_PATH = Path(
+    os.getenv("DATA_PATH", BASE_DIR / "data/raw.csv")
+)
